@@ -1,0 +1,19 @@
+body {
+  @apply bg-wld-1 text-wld-5;
+}
+
+h1 {
+  @apply font-heavy;
+}
+
+p {
+  @apply font-light my-3 text-justify;
+}
+
+ul {
+  @apply ml-10 list-disc;
+}
+
+blockquote {
+  @apply pl-4 my-6 italic text-wld-4 border-l-4 border-wld-3;
+}
