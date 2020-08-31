@@ -1,7 +1,19 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  purge: [],
+  future: {
+    removeDeprecatedGapUtilities: true,
+  },
+  purge: [
+    "./components/**/*.js",
+    "./pages/**/*.js",
+    "./components/**/*.jsx",
+    "./pages/**/*.jsx",
+    "./components/**/*.ts",
+    "./pages/**/*.ts",
+    "./components/**/*.tsx",
+    "./pages/**/*.tsx",
+  ],
   theme: {
     fontFamily: {
       heavy: ["Inter", "Graphik", "sans-serif"],
@@ -22,7 +34,7 @@ module.exports = {
       },
     },
     inset: {
-      "1": "1rem",
+      1: "1rem",
       ...defaultTheme.inset,
     },
   },
